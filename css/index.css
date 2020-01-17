@@ -1,0 +1,286 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff2') format('woff2'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*头部信息*/
+#headMessage li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 6px;
+    font-size: 0;
+}
+
+#headMessage li a {
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+#headMessage li a:hover {
+    color: #ff4400;
+}
+
+#headMessage a.login {
+    color: #f22e00;
+}
+
+#headMessage span {
+    font-size: 12px;
+}
+
+#headMessage span.arrow {
+    margin-left: 7px;
+}
+
+#headMessage li strong {
+    font-size: 12px;
+    color: #f22e00;
+}
+
+#headMessage li span.store {
+    color: #9c9c9c;
+}
+
+#headMessage li.line {
+    font-size: 12px;
+    color: #dddddd;
+    padding: 0 5px;
+}
+
+/*头部广告*/
+#headAd {
+    background-color: #d10757;
+    /*height: 100px;*/
+}
+
+#headAd .go {
+    display: block;
+    padding: 10px 10px 10px 15px;
+}
+
+#headAd .go img {
+    width: 80px;
+    height: 80px;
+}
+
+#headAd ul {
+    padding-top: 13px;
+}
+
+#headAd li {
+    float: left;
+    width: 209px;
+    height: 75px;
+    margin-right: 10px;
+    padding: 12px 15px 0 15px;
+    box-sizing: border-box;
+    /*怪异盒模型*/
+}
+
+#headAd li h3 {
+    line-height: 28px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#headAd li p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#headAd li a {
+    color: #ffffff;
+    display: block;
+}
+
+#headAd li a img {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+}
+
+#headAd li.item1 {
+    background: url("../images/adbg_01.png") no-repeat;
+}
+
+#headAd li.item2 {
+    background: url("../images/adbg_02.png") no-repeat;
+}
+
+#headAd li.item3 {
+    background: url("../images/adbg_03.png") no-repeat;
+}
+
+#headAd li.item4 {
+    background: url("../images/adbg_04.png") no-repeat;
+}
+
+#headAd li.item5 {
+    background: url("../images/adbg_05.png") no-repeat;
+    margin-right: 0;
+}
+
+#headSearch {
+    background-color: #ffffff;
+    padding: 34px 0 9px 0;
+}
+
+#headSearch h1 a {
+    background: url("https://img.alicdn.com/tfs/TB1tjBFjrj1gK0jSZFuXXcrHpXa-190-121.gif") no-repeat;
+    width: 190px;
+    height: 121px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-size: 100%;
+}
+
+#headSearch .code {
+    width: 76px;
+    height: 88px;
+    border: 1px solid #eeeeee;
+    margin-right: 110px;
+    position: relative;
+    text-align: center;
+}
+
+#headSearch .code img {
+    width: 62px;
+    height: 62px;
+}
+
+#headSearch .close {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    border: 1px solid #eeeeee;
+    left: -16px;
+    color: #dddddd;
+}
+
+#headSearch .search {
+    width: 630px;
+    margin: 0 auto;
+}
+
+#headSearch .searchTap {
+    height: 22px;
+    padding-left: 7px;
+}
+
+#headSearch .searchTap li {
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    color: #ff4400;
+    margin-right: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#headSearch .searchTap li:hover {
+    background-color: #ffeee5;
+}
+
+#headSearch .searchTap li.active {
+    color: #ffffff;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+}
+
+#headSearch .searchContent {
+    height: 40px;
+}
+
+#headSearch .searchBox {
+    width: 554px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#headSearch .searchBox input {
+    width: 490px;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#headSearch .searchBox .placeholder {
+    position: absolute;
+    top: 6px;
+    left: 14px;
+
+}
+
+#headSearch .searchBox .placeholder span {
+    font-size: 13px;
+    color: #9c9c9c;
+    vertical-align: 1px;
+}
+
+#headSearch .searchBox .imgSearch {
+    position: absolute;
+    right: 18px;
+    top: 3px;
+    font-size: 22px;
+    color: #9c9c9c;
+    cursor: pointer;
+}
+
+#headSearch .searchContent button{
+    width: 74px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#headSearch .hotKey{
+    height: 25px;
+    line-height: 25px;
+}
+
+#headSearch .hotKey a:hover{
+    color: #ff5000;
+}
+
+
